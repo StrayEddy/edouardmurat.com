@@ -1,0 +1,403 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Edouard Murat – Portfolio{% endblock %}
+
+{% block content %}
+
+  <!-- Hero Section -->
+  <section class="hero position-relative text-center d-flex flex-column justify-content-center align-items-center">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="{% static 'core/videos/hero-bg.mp4' %}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content position-absolute text-white text-center">
+      <h1 class="display-3 fw-bold">Edouard Murat</h1>
+      <p class="lead">Game Developer</p>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="container py-5 my-5">
+    <h2>About Me</h2>
+    <p class="lead">I'm a game developer specializing in creating engaging and interactive experiences. I build games using Unity, Godot, custom backend servers, and deploy across multiple platforms including Steam, Android, iOS, and Web. My work spans both front-end gameplay and back-end systems, with a strong focus on performance, scalability, and player experience.</p>
+  </section>
+
+  <!-- Professional Games -->
+  <section id="professional-games" class="container py-5 bg-dark-light">
+    <h2 class="mb-4 fs-1">Professional Games</h2>
+
+    <!-- EdNoKa card -->
+    <a href="/games/ednoka" class="text-decoration-none text-dark">
+      <div class="card mb-4 shadow-sm hover-zoom text-white bg-dark">
+        <div class="row g-0 align-items-center">
+
+          <!-- Left: Video -->
+          <div class="col-md-6">
+            <div class="ratio ratio-16x9">
+              <video class="w-100" autoplay muted loop playsinline>
+                <source src="{% static 'core/videos/ednoka_trailer.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+          <!-- Right: Card Body -->
+          <div class="col-md-6">
+            <div class="card-body">
+              <h3 class="card-title">EdNoKa - <small class="fs-5">Study Through Gaming</small></h3>
+              <small class="text-secondary">October 2022 - Present</small>
+              <p class="card-text">
+                An online educational gaming platform blending quizzes with gameplay in various 2D and 3D worlds. Features assisted quiz creation, in-game store, and 5 games presented below.
+              </p>
+
+              <!-- Pills -->
+              <div class="mt-2">
+                <span class="badge rounded-pill bg-primary">Steam</span>
+                <span class="badge rounded-pill bg-success">Google Play</span>
+                <span class="badge rounded-pill bg-danger">Apple Store</span>
+                <span class="badge rounded-pill bg-secondary text-light">In-Game Store</span>
+                <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </a>
+
+
+    <div class="row row-cols-2 row-cols-md-5 g-4">
+
+      <!-- Base Of 30 Card -->
+      <div class="col">
+        <a href="/games/base-of-30" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/base_of_30.png' %}" alt="Base Of 30 Image" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Base Of 30</h4>
+              <p class="card-text">Fast-paced hack-and-slash where you fight through 30 rooms of escalating enemy waves.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Unity</span>
+              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Aerial Ambush Card -->
+      <div class="col">
+        <a href="/games/aerial-ambush" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/aerial_ambush.png' %}" alt="Aerial Ambush Image" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Aerial Ambush</h4>
+              <p class="card-text">High-speed platformer where you dodge homing missiles in intense 20–30 second bursts of action.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Unity</span>
+              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Agen Ka Card -->
+      <div class="col">
+        <a href="/games/agent-ka" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/agent_ka.png' %}" alt="Agent Ka Image" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Agent Ka</h4>
+              <p class="card-text">8-bit game where you activate powers to find hidden mafia targets in a crowded city, Waldo-style.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Godot</span>
+              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Pico Golf Card -->
+      <div class="col">
+        <a href="/games/pico-golf" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/pico_golf.png' %}" alt="Pico Golf Image" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Pico Golf</h4>
+              <p class="card-text">Mini golf game set on the sea floor, with fish swimming around and a calming underwater vibe.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Godot</span>
+              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Veggies Island Card -->
+      <div class="col">
+        <a href="/games/veggies-island" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/veggies_island.png' %}" alt="Veggies Island Image" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Veggies Island</h4>
+              <p class="card-text">Farming game where you play as a cute rabbit growing veggies on a cozy island.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Godot</span>
+              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Creative Projects -->
+  <section id="creative-projects" class="container py-5">
+    <h2 class="mb-4">Creative Projects</h2>
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+
+      <!-- Tomb Card -->
+      <div class="col">
+        <a href="/games/tomb" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/tomb.png' %}" alt="Tomb Image" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">
+                Tomb
+                <span class="badge bg-dark text-light position-absolute top-0 start-0 m-2">
+                  <i class="fas fa-star me-1" style="color: cyan;"></i> Favorite
+                </span>
+              </h4>
+              <small class="text-secondary">February 2022</small>
+              <p class="card-text">Fast-paced, Doom-style FPS where you battle mummies and beetles in dark crypts.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Godot</span>
+              <span class="badge rounded-pill bg-black">Web</span>
+              <span class="badge rounded-pill bg-warning">Itch.io</span>
+              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Fruit Card -->
+      <div class="col">
+        <a href="/games/fruit" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/fruit.png' %}" alt="Fruit Image" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Fruit</h4>
+              <small class="text-secondary">February 2022</small>
+              <p class="card-text">1-minute colorful 2D painting game where you paint as many fruits as you can.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Godot</span>
+              <span class="badge rounded-pill bg-black">Web</span>
+              <span class="badge rounded-pill bg-warning">Itch.io</span>
+              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Archer Card -->
+      <div class="col">
+        <a href="/games/archer" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/archer.png' %}" alt="Archer Image" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Archer</h4>
+              <small class="text-secondary">January 2022</small>
+              <p class="card-text">VR game where you rapidly take down flying drones using a bow and arrows.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">VR</span>
+              <span class="badge rounded-pill bg-black">Godot</span>
+              <span class="badge rounded-pill bg-success">Android</span>
+              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Hell H Card -->
+      <div class="col">
+        <a href="/games/hell-h" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/hell_h.png' %}" alt="Hell H Image" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Hell H</h4>
+              <small class="text-secondary">January 2022</small>
+              <p class="card-text">Short first-person horror game with puzzle-solving elements set in a tense, eerie environment.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Godot</span>
+              <span class="badge rounded-pill bg-black">Web</span>
+              <span class="badge rounded-pill bg-warning">Itch.io</span>
+              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Meditation World VR Card -->
+      <div class="col">
+        <a href="/games/meditation-world-vr" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/meditation_world_vr.png' %}" alt="Meditation World VR Image" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Meditation World VR</h4>
+              <small class="text-secondary">March 2020</small>
+              <p class="card-text">Peaceful VR experience where you gather with friends around a campfire to meditate in a virtual world.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">VR</span>
+              <span class="badge rounded-pill bg-black">Godot</span>
+              <span class="badge rounded-pill bg-success">Google Play</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Meditation Card Game Card -->
+      <div class="col">
+        <a href="/games/meditation-card-game" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/meditation_card_game.png' %}" alt="Meditation Card Game Image" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">
+                Meditation Card Game
+                <span class="badge bg-dark text-light position-absolute top-0 start-0 m-2">
+                  <i class="fas fa-star me-1" style="color: cyan;"></i> Favorite
+                </span>
+              </h4>
+              <small class="text-secondary">October 2019</small>
+              <p class="card-text">Calming card game featuring meditation-themed cards and an in-game store.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Godot</span>
+              <span class="badge rounded-pill bg-success">Google Play</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Left 4 Dead 2D Card -->
+      <div class="col">
+        <a href="/games/left-4-dead-2d" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/left_4_dead_2d.png' %}" alt="Left 4 Dead 2D Image" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">
+                Left 4 Dead 2D
+                <span class="badge bg-dark text-light position-absolute top-0 start-0 m-2">
+                  <i class="fas fa-star me-1" style="color: cyan;"></i> Favorite
+                </span>
+              </h4>
+              <small class="text-secondary">November 2018</small>
+              <p class="card-text">Top-down shooter where you fight through waves of zombies on your way to the next safe zone.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Phaser</span>
+              <span class="badge rounded-pill bg-success">Google Play</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education & Skills -->
+  <section id="education-skills" class="container py-5">
+    <h2>Education & Skills</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h4>Education</h4>
+        <ul class="list-unstyled">
+          <li>
+            <strong>Bachelor of Computer Engineering</strong><br>
+            University of Sherbrooke, 2005–2009
+          </li>
+          <li class="mt-2">
+            <strong>Bachelor of Psychology</strong><br>
+            Concordia University, 2015–2017
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <h4>Skills</h4>
+        <ul class="list-unstyled">
+          <li><strong>Engines & Frameworks:</strong> Unity, Godot, Django</li>
+          <li><strong>Languages:</strong>C#, Python, GDScript, Java, JavaScript, HTML, SQL</li>
+          <li><strong>Tools:</strong> Git, Blender, GIMP, Inkscape, Audacity, SQLite</li>
+          <li><strong>Other:</strong> Game server deployment, QA automation, Agile & TDD</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <h4>Certifications</h4>
+      <ul class="list-unstyled">
+        <li>Certified Associate Python Programmer – Python Institute</li>
+        <li>Oracle Certified Professional, Java SE 7 Programmer</li>
+      </ul>
+    </div>
+
+    <div class="mt-4">
+      <a href="{% static 'core/files/Edouard_Murat_CV_EN.pdf' %}" class="btn btn-outline-info" download data-umami-event="download-cv-clicked">
+        Download Full CV
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="container py-5 text-center">
+    <h2>Contact</h2>
+    <div class="row">
+      <div class="col">
+        <p>Email: <a href="mailto:edouardmurat1@gmail.com" data-umami-event="email-clicked">edouardmurat1@gmail.com</a></p>
+      </div>
+      <div class="col">
+    <p>GitHub: <a href="https://github.com/MuratEdouard" data-umami-event="github-clicked">MuratEdouard</a></p>
+      </div>
+      <div class="col">
+    <p>LinkedIn: <a href="http://www.linkedin.com/in/edouard-murat-539567308" data-umami-event="linkedin-clicked">edouard-murat-539567308</a></p>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

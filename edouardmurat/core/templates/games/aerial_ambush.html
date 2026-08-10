@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="aerial-ambush" class="container-fluid text-light py-5 px-4 px-md-5">
+
+  <!-- Back Button -->
+  <div class="mb-4">
+    <a href="{% url 'home' %}#professional-games" class="btn btn-xs btn-outline-light">
+      ← Back to list of games
+    </a>
+  </div>
+
+  <!-- Title and Description -->
+  <section class="mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold mb-3">
+          Aerial Ambush
+          <span class="badge bg-secondary fw-semibold fs-6">Developed Independently</span>
+        </h1>
+        <p class="lead text-light">
+          High-speed platformer where you dodge homing missiles in intense 20–30 second bursts of action.
+        </p>
+        <p class="lead text-light">
+          Designed for rapid retries and tight controls, Aerial Ambush tests your reflexes in short, chaotic runs filled with explosive near-misses and aerial agility.
+        </p>
+        <a href="#" class="btn btn-outline-light mt-3 px-4 py-2" data-bs-toggle="modal" data-bs-target="#gameModal"
+   onclick="document.getElementById('gameIframe').src = '{% static 'core/games/AerialAmbush/index.html' %}';" data-umami-event="aerial-ambush-demo-clicked">
+          Play web demo
+        </a>
+        <a href="https://github.com/MuratEdouard/AerialAmbush" target="_blank" class="btn btn-secondary btn-outline-light mt-3 px-4 py-2" data-umami-event="aerial-ambush-code-clicked">
+          Look at the code
+        </a>
+      </div>
+
+      <!-- Video Section -->
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <video class="w-100" autoplay muted loop playsinline>
+            <source src="{% static 'core/videos/aerial_ambush.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <a href="https://store.steampowered.com/app/3256100/EdNoKa/" target="_blank" class="btn-outline-light mt-3 px-4 py-2" data-umami-event="ednoka-playtest-clicked">
+        Play the full game in EdNoKa (Steam open playtest)
+      </a>
+    </div>
+  </section>
+
+  <!-- Concept Section -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4 align-items-center">
+      <div class="col">
+        <h2 class="text-light mb-4">Under the Hood</h2>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Built responsive, high-speed character movement and collision detection</li>
+          <li class="mb-2">• Designed homing missile AI and dodge-centric gameplay loops</li>
+          <li class="mb-2">• Balanced short session design for fast retries and high replayability</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game Modal -->
+  <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen-md-down">
+      <div class="modal-content bg-dark border-0">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title text-light" id="gameModalLabel">Play Aerial Ambush</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="ratio ratio-16x9">
+            <iframe id="gameIframe" src="" allowfullscreen class="w-100 border-0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

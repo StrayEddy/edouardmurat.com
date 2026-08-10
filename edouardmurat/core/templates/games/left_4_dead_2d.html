@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="left-4-dead-2d" class="container-fluid text-light py-5 px-4 px-md-5">
+
+  <!-- Back Button -->
+  <div class="mb-4">
+    <a href="{% url 'home' %}#creative-projects" class="btn btn-xs btn-outline-light">
+      ← Back to list of games
+    </a>
+  </div>
+
+  <!-- Title and Description -->
+  <section class="mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold mb-3">
+          Left 4 Dead 2D
+          <span class="badge bg-secondary text-light fw-semibold fs-6">Fan Game</span>
+        </h1>
+        <p class="lead text-light">
+          A 2D fan-made tribute to the iconic zombie survival series.
+        </p>
+        <p class="lead text-light">
+          Choose your favorite character and survive wave after wave of the infected. Work together with allies in this pixelated side-scroller to stay alive and make it to the next safe room.
+        </p>
+        <p class="text-warning fst-italic mt-3">
+          Removed from Google Play due to copyright restrictions. It was a fan project made for learning purposes.
+        </p>
+        <a href="{% static 'core/games/Left4Dead2D/Left4Dead2D.apk' %}" download class="btn btn-outline-light mt-3 px-4 py-2" data-umami-event="left4dead2d-download-apk-clicked">
+          Download Android .apk
+        </a>
+      </div>
+
+      <!-- Video or Image Section -->
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <video class="w-100" autoplay muted loop playsinline>
+            <source src="{% static 'core/videos/left_4_dead_2d.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Highlights Section -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4 align-items-center">
+      <div class="col">
+        <h2 class="text-light mb-4">Key Features</h2>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Procedurally generated rooms, each with a single strategic exit</li>
+          <li class="mb-2">• AI teammates that collaborate, flank, and respond to player behavior</li>
+          <li class="mb-2">• Dynamic difficulty that adjusts to player engagement and performance</li>
+          <li class="mb-2">• Mobile-friendly optimization with horde-based enemy encounters</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  const gameModal = document.getElementById('gameModal');
+  gameModal?.addEventListener('hidden.bs.modal', function () {
+    document.getElementById('gameIframe').src = '';
+  });
+</script>
+{% endblock %}

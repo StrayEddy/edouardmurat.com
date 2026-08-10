@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="meditation-world-vr" class="container-fluid text-light py-5 px-4 px-md-5">
+
+  <!-- Back Button -->
+  <div class="mb-4">
+    <a href="{% url 'home' %}#creative-projects" class="btn btn-xs btn-outline-light">
+      ← Back to list of games
+    </a>
+  </div>
+
+  <!-- Title and Description -->
+  <section class="mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold mb-3">
+          Meditation World VR
+          <span class="badge bg-secondary text-light fw-semibold fs-6">Mobile VR</span>
+        </h1>
+        <p class="lead text-light">
+          A peaceful island in VR where you can meditate, connect, and practice mindfulness alongside users from around the world.
+        </p>
+        <p class="lead text-light">
+          Customize your space, follow guided meditations, or simply sit and reflect in a serene natural setting—designed to support both solo practice and social presence.
+        </p>
+        <p class="text-secondary fst-italic mt-3">
+          End-to-end development: solo-designed, built, and published.
+        </p>
+        <a href="{% static 'core/games/MeditationWorldVR/MeditationWorldVR.apk' %}" download class="btn btn-outline-light mt-3 px-4 py-2" data-umami-event="meditationworldvr-download-apk-clicked">
+          Download Android .apk
+        </a>
+      </div>
+
+      <!-- Image or Video Section -->
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9 bg-dark d-flex align-items-center justify-content-center">
+          <img src="{% static 'core/images/meditation_world_vr_2.png' %}" alt="Meditation World VR image" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4 align-items-center">
+      <div class="col">
+        <h2 class="text-light mb-4">Key Features</h2>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Built for standalone VR optimized for mobile</li>
+          <li class="mb-2">• Serene low-poly island environment with ambient soundscapes</li>
+          <li class="mb-2">• Real-time user presence from all over the globe</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  const gameModal = document.getElementById('gameModal');
+  gameModal?.addEventListener('hidden.bs.modal', function () {
+    document.getElementById('gameIframe').src = '';
+  });
+</script>
+{% endblock %}

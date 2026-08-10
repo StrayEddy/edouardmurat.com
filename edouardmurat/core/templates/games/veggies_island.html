@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="veggies-island" class="container-fluid text-light py-5 px-4 px-md-5">
+
+  <!-- Back Button -->
+  <div class="mb-4">
+    <a href="{% url 'home' %}#professional-games" class="btn btn-xs btn-outline-light">
+      ← Back to list of games
+    </a>
+  </div>
+
+  <!-- Title and Description -->
+  <section class="mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold mb-3">
+          Veggies Island
+          <span class="badge bg-secondary fw-semibold fs-6">Developed Independently</span>
+        </h1>
+        <p class="lead text-light">
+          A cozy farming game where you play as a cheerful little rabbit growing vegetables on a peaceful island.
+        </p>
+        <p class="lead text-light">
+          With charming animations, gentle pacing, and a relaxing vibe, Veggies Island invites players to unwind, grow crops, and take care of their own slice of paradise.
+        </p>
+        <a href="https://store.steampowered.com/app/3256100/EdNoKa/" target="_blank" class="btn btn-outline-light mt-3 px-4 py-2" data-umami-event="ednoka-playtest-clicked">
+          Play the full game in EdNoKa (Steam open playtest)
+        </a>
+      </div>
+
+      <!-- Video Section -->
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <video class="w-100" autoplay muted loop playsinline>
+            <source src="{% static 'core/videos/veggies_island.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Concept Section -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4 align-items-center">
+      <div class="col">
+        <h2 class="text-light mb-4">Game Features</h2>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Cozy farming loop with planting, watering, and harvesting veggies</li>
+          <li class="mb-2">• A procedurally generated island — a new layout with each playthrough</li>
+          <li class="mb-2">• Simple inventory system to collect and manage your crops</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+{% endblock %}

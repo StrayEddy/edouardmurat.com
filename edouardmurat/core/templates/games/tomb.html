@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="crypt-fps" class="container-fluid text-light py-5 px-4 px-md-5">
+
+  <!-- Back Button -->
+  <div class="mb-4">
+    <a href="{% url 'home' %}#creative-projects" class="btn btn-xs btn-outline-light">
+      ← Back to list of games
+    </a>
+  </div>
+
+  <!-- Title and Description -->
+  <section class="mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold mb-3">
+          Tomb
+          <span class="badge bg-secondary text-light fw-semibold fs-6">Game Jam</span>
+        </h1>
+        <p class="lead text-light">
+          Fast-paced, Doom-style FPS where you battle mummies and beetles in dark crypts.
+        </p>
+        <p class="lead text-light">
+          Dive into claustrophobic tombs filled with ancient traps and swarms of enemies. Shoot, heal, and survive wave after wave of relentless foes in this gritty arcade shooter made during a Game Jam.
+        </p>
+        <a href="#" class="btn btn-outline-light mt-3 px-4 py-2" data-bs-toggle="modal" data-bs-target="#gameModal"
+   onclick="document.getElementById('gameIframe').src = '{% static 'core/games/Tomb/index.html' %}';" data-umami-event="tomb-play-clicked">
+          Play in browser
+        </a>
+      </div>
+
+      <!-- Video Section -->
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <video class="w-100" autoplay muted loop playsinline>
+            <source src="{% static 'core/videos/tomb.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Concept Section -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4 align-items-center">
+      <div class="col">
+        <h2 class="text-light mb-4">Jam Highlights</h2>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Built from scratch in under one week</li>
+          <li class="mb-2">• Designed a fast and responsive shooter feel inspired by classic FPS games</li>
+          <li class="mb-2">• Created hand-crafted enemy AI with state machine and path finding</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game Modal -->
+  <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen-md-down">
+      <div class="modal-content bg-dark border-0">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title text-light" id="gameModalLabel">Play Tomb</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="ratio ratio-16x9">
+            <iframe id="gameIframe" src="" allowfullscreen class="w-100 border-0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const gameModal = document.getElementById('gameModal');
+  gameModal.addEventListener('hidden.bs.modal', function () {
+    document.getElementById('gameIframe').src = '';
+  });
+</script>
+
+{% endblock %}

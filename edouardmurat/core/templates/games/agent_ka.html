@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="agent-ka" class="container-fluid text-light py-5 px-4 px-md-5">
+
+  <!-- Back Button -->
+  <div class="mb-4">
+    <a href="{% url 'home' %}#professional-games" class="btn btn-xs btn-outline-light">
+      ← Back to list of games
+    </a>
+  </div>
+
+  <!-- Title and Description -->
+  <section class="mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold mb-3">
+          Agent Ka
+          <span class="badge bg-secondary fw-semibold fs-6">Developed Independently</span>
+        </h1>
+        <p class="lead text-light">
+          8-bit stealth puzzle game where you activate powers to find hidden mafia targets in a bustling pixel city.
+        </p>
+        <p class="lead text-light">
+          Inspired by *Where's Waldo?* with a twist, Agent Ka challenges your observation and timing. Use various powers to track your target in time.
+        </p>
+        <a href="https://store.steampowered.com/app/3256100/EdNoKa/" target="_blank" class="btn btn-outline-light mt-3 px-4 py-2" data-umami-event="ednoka-playtest-clicked">Play the full game in EdNoKa (Steam open playtest)
+        </a>
+      </div>
+
+      <!-- Video Section -->
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <video class="w-100" autoplay muted loop playsinline>
+            <source src="{% static 'core/videos/agent_ka.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Concept Section -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4 align-items-center">
+      <div class="col">
+        <h2 class="text-light mb-4">Gameplay Systems</h2>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Procedurally generated city and crowd simulation — a new layout in every session</li>
+          <li class="mb-2">• Power-based gameplay: X-ray vision, mini camera, slow motion, and more</li>
+          <li class="mb-2">• Designed to be challenging and rewarding</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+</div>
+{% endblock %}

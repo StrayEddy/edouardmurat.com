@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="archer-game" class="container-fluid text-light py-5 px-4 px-md-5">
+
+  <!-- Back Button -->
+  <div class="mb-4">
+    <a href="{% url 'home' %}#creative-projects" class="btn btn-xs btn-outline-light">
+      ← Back to list of games
+    </a>
+  </div>
+
+  <!-- Title and Description -->
+  <section class="mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold mb-3">
+          Archer
+          <span class="badge bg-secondary text-light fw-semibold fs-6">Mobile VR</span>
+        </h1>
+        <p class="lead text-light">
+          VR game where you rapidly take down flying drones using a bow and arrows.
+        </p>
+        <p class="lead text-light">
+          Experience immersive archery action in a high-tech arena. Aim, draw, and shoot in fast-paced VR combat against agile drones.
+        </p>
+        <a href="{% static 'core/games/Archer/Archer.zip' %}" download class="btn btn-outline-light mt-3 px-4 py-2" data-umami-event="archer-apk-download-clicked">
+          Download Android .apk
+        </a>
+      </div>
+
+      <!-- Image Section -->
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9 bg-dark d-flex align-items-center justify-content-center">
+          <img src="{% static 'core/images/archer.png' %}" alt="Archer game image" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Concept Section -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4 align-items-center">
+      <div class="col">
+        <h2 class="text-light mb-4">Jam Highlights</h2>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Developed for VR with intuitive bow-and-arrow controls</li>
+          <li class="mb-2">• Fast-paced enemy drone behavior and reactive combat</li>
+          <li class="mb-2">• Tight haptic feedback and immersive sound design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  const gameModal = document.getElementById('gameModal');
+  gameModal.addEventListener('hidden.bs.modal', function () {
+    document.getElementById('gameIframe').src = '';
+  });
+</script>
+
+{% endblock %}

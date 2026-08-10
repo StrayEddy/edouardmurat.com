@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="meditation-card-game" class="container-fluid text-light py-5 px-4 px-md-5">
+
+  <!-- Back Button -->
+  <div class="mb-4">
+    <a href="{% url 'home' %}#creative-projects" class="btn btn-xs btn-outline-light">
+      ← Back to list of games
+    </a>
+  </div>
+
+  <!-- Title and Description -->
+  <section class="mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold mb-3">
+          Meditation Card Game
+          <span class="badge bg-secondary text-light fw-semibold fs-6">Monetized</span>
+        </h1>
+        <p class="lead text-light">
+          A free offline meditation card game where you work your way toward enlightenment.
+        </p>
+        <p class="lead text-light">
+          Use traditional meditation techniques to cultivate tranquility, concentration, insight, and mindfulness. Subdue the mind’s defilements and unlock new meditators, each with unique abilities to aid your spiritual journey.
+        </p>
+        <p class="text-secondary fst-italic mt-3">
+          End-to-end development: solo-designed, built, and published.
+        </p>
+        <a href="{% static 'core/games/MeditationCardGame/MeditationCardGame.apk' %}" download class="btn btn-outline-light mt-3 px-4 py-2" data-umami-event="meditationcardgame-download-apk-clicked">
+          Download Android .apk
+        </a>
+      </div>
+
+      <!-- Video Section -->
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <video class="w-100" autoplay muted loop playsinline>
+            <source src="{% static 'core/videos/meditation_card_game.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4 align-items-center">
+      <div class="col">
+        <h2 class="text-light mb-4">Key Features</h2>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Turn-based strategy rooted in meditation practices</li>
+          <li class="mb-2">• Unlockable characters and dynamic deck-building</li>
+          <li class="mb-2">• Mobile in-game store and ad monetization</li>
+          <li class="mb-2">• Development of all art (music, sounds, visuals)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  const gameModal = document.getElementById('gameModal');
+  gameModal?.addEventListener('hidden.bs.modal', function () {
+    document.getElementById('gameIframe').src = '';
+  });
+</script>
+{% endblock %}

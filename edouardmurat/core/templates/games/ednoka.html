@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="ednoka-page" class="container-fluid text-light py-5 px-4 px-md-5">
+
+  <!-- Back Button -->
+  <div class="mb-4">
+    <a href="{% url 'home' %}#professional-games" class="btn btn-xs btn-outline-light">
+      ← Back to list of games
+    </a>
+  </div>
+
+  <!-- Title and Description -->
+  <section class="mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold mb-3">
+          EdNoKa
+          <span class="badge bg-secondary fw-semibold fs-6">"Study Through Gaming" Platform</span>
+        </h1>
+        <p class="lead text-light">
+          EdNoKa is a free educational gaming platform where players answer quiz questions to progress through engaging, genre-diverse games.
+        </p>
+        <p class="lead text-light">
+          Choose or create quizzes, play across multiple game styles, and learn while you play. Whether you’re farming, golfing, or battling enemies, your knowledge drives the gameplay.
+        </p>
+        <a href="https://store.steampowered.com/app/3256100/EdNoKa/" target="_blank" class="btn btn-outline-light mt-3 px-4 py-2" data-umami-event="ednoka-playtest-clicked">
+          Try the open Steam Playtest
+        </a>
+        <a href="https://www.ednoka.com" target="_blank" class="btn btn-outline-light mt-3 px-4 py-2" data-umami-event="ednoka-website-clicked">
+          Visit EdNoKa's Website
+        </a>
+      </div>
+
+      <!-- Video Section -->
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <video class="w-100" autoplay muted loop playsinline>
+            <source src="{% static 'core/videos/ednoka_trailer.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Concept Section -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4">
+      <div class="col">
+        <h2 class="text-light mb-4">The Concept Behind EdNoKa</h2>
+        <p class="fs-5">
+          EdNoKa was born from a simple frustration: the artificial divide between learning and play. Growing up, studying was expected to be serious and isolated, while gaming was considered a guilty pleasure.
+        </p>
+        <p class="fs-5">
+          I believe learning and play can—and should—coexist. EdNoKa is my proof of that belief. It's a platform where academic content blends seamlessly with interactive, rewarding gameplay. Whether you're solving puzzles, dodging projectiles, or farming crops, you're learning. Every question shapes your experience. Every lesson lives inside the game.
+        </p>
+        <p class="fs-5">
+          This is more than gamification—it's learning through play, with no compromises. Because no one should have to choose between personal growth and genuine fun.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game Worlds & Quizzes Section -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4">
+      <div class="col-6">
+        <h2 class="text-light mb-4">Five Unique Games</h2>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• <a href="/games/base-of-30"><strong>Base of 30</strong></a> – Hack-and-slash action through procedural rooms</li>
+          <li class="mb-2">• <a href="/games/pico-golf"><strong>Pico Golf</strong></a> – A golf game where every stroke depends on your answers</li>
+          <li class="mb-2">• <a href="/games/veggies-island"><strong>Veggies Island</strong></a> – Farm, harvest, and learn in a relaxing simulation</li>
+          <li class="mb-2">• <a href="/games/aerial-ambush"><strong>Aerial Ambush</strong></a> – Fast-paced 3D platforming with learning-based challenges</li>
+          <li class="mb-2">• <a href="/games/agent-ka"><strong>Agent Ka</strong></a> – *Waldo-style* game on the clock with special powers at your disposal</li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <h2 class="text-light mb-4">Dynamic Quiz System</h2>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Create and customize your own quizzes</li>
+          <li class="mb-2">• Use the most advanced AI to help you generate unique quizzes</li>
+          <li class="mb-2">• Browse and adapt community-made quizzes</li>
+          <li class="mb-2">• Access curated, high-quality quizzes from the EdNoKa team</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Behind the Scenes Section -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4">
+      <div class="col">
+        <h2 class="text-light mb-4">Behind the Scenes</h2>
+        <p class="fs-5 mb-3">EdNoKa was developed almost entirely by me—from game design to server infrastructure. Here's a breakdown of what I built:</p>
+
+        <!-- Game Development -->
+        <h4 class="text-light mt-4 mb-2">🎮 Game Development</h4>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Designed and developed five genre-spanning games in Unity and Godot (2D & 3D)</li>
+          <li class="mb-2">• Engineered quiz-integrated gameplay: frequent multiple choice question that alters the course of play</li>
+          <li class="mb-2">• Integrated AI-assisted quiz generation for effortless player content creation</li>
+        </ul>
+
+        <!-- Backend and Infrastructure -->
+        <h4 class="text-light mt-4 mb-2">🛠️ Backend & Infrastructure</h4>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Built a Django REST API with full database integration and secure authentication</li>
+          <li class="mb-2">• Deployed production servers using Ubuntu, and Nginx</li>
+          <li class="mb-2">• Developed a cross-platform, coin-based in-game store (Steam, Google Play, Apple Store)</li>
+        </ul>
+
+        <!-- Testing and Feedback -->
+        <h4 class="text-light mt-4 mb-2">🧪 Testing & Feedback</h4>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Ran thorough testing across desktop (Windows, Mac, Linux) and mobile platforms (Android & iOS)</li>
+          <li class="mb-2">• Beta-tested with real users and gathered live feedback from streamers</li>
+        </ul>
+
+        <!-- Design and Promotion -->
+        <h4 class="text-light mt-4 mb-2">🎨 Design & Promotion</h4>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Created all promotional assets: video trailers, logos, animated explainers, Steam page, and the official website</li>
+        </ul>
+
+        <!-- Final Note -->
+        <p class="fs-5 mt-4">
+          From concept to deployment, every part of EdNoKa was crafted by one person. This isn't just a project—it's a mission to change how people experience learning.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</div>
+{% endblock %}
