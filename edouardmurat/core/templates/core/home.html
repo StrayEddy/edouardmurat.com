@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Edouard Murat – Portfolio{% endblock %}
+{% block title %}Edouard Murat – Gameplay Programmer &amp; Team Lead{% endblock %}
 
 {% block content %}
 
@@ -13,14 +13,100 @@
     </video>
     <div class="hero-content position-absolute text-white text-center">
       <h1 class="display-3 fw-bold">Edouard Murat</h1>
-      <p class="lead">Game Developer</p>
+      <p class="lead">Gameplay Programmer &amp; Team Lead</p>
+      <p class="fs-6 text-white-50 mb-0">Godot &amp; Unity &middot; Montr&eacute;al &middot; EN / FR</p>
     </div>
   </section>
 
   <!-- About Me -->
   <section id="about" class="container py-5 my-5">
     <h2>About Me</h2>
-    <p class="lead">I'm a game developer specializing in creating engaging and interactive experiences. I build games using Unity, Godot, custom backend servers, and deploy across multiple platforms including Steam, Android, iOS, and Web. My work spans both front-end gameplay and back-end systems, with a strong focus on performance, scalability, and player experience.</p>
+    <p class="lead">I build gameplay systems, and I lead the people who build them.</p>
+    <p>For the past year I led a five-person programming team at Sigma Digital, building curriculum-aligned literacy games delivered on Android tablets to first- and second-grade children in Africa. I hired the team, owned the architecture, and ran code review and sprint planning.</p>
+    <p>Before games I spent six years as a professional developer &mdash; five of them writing production C# at Fujitsu Consulting, on a payment solution for HydroSherbrooke and the daycare management system for the Minist&egrave;re de la Famille du Qu&eacute;bec &mdash; and later helped lead a development team at BMC Software, where I also interviewed candidates.</p>
+    <p>I also hold a psychology degree, and spent seven years facilitating workshops and training managers and facilitators. That sounds like a detour and it isn't: it's why I think carefully about onboarding, difficulty curves, and what a playtest is actually telling you.</p>
+    <p class="mb-0">Day to day: Godot and Unity, GDScript and C#, gameplay systems, AI behavior, procedural generation, and shaders. Everything below is playable.</p>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="container py-5 bg-dark-light">
+    <h2 class="mb-4">Experience</h2>
+
+    <div class="card mb-3 shadow-sm text-white bg-dark">
+      <div class="card-body">
+        <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+          <h3 class="card-title fs-4 mb-1">Lead Gameplay Programmer (Godot) &mdash; Sigma Digital</h3>
+          <small class="text-secondary">Sept 2025 &ndash; Aug 2026</small>
+        </div>
+        <small class="text-secondary d-block mb-2">South Africa &middot; remote from Montr&eacute;al</small>
+        <p class="card-text">Led a five-person programming team building curriculum-aligned literacy games delivered on Android tablets to first- and second-grade children in Africa.</p>
+        <ul class="card-text">
+          <li>Hired the programming team and led it as technical lead, owning architecture, code review, and sprint planning</li>
+          <li>Designed a parameter-driven mini-game framework so assets, audio, and instruction flows are shared across titles instead of rebuilt &mdash; a single templated mechanic generates many distinct curriculum activities</li>
+          <li>Delivered six mini-games and supported two rounds of playtesting with the target age group</li>
+          <li>Built for low-cost Android tablets, with gameplay mapped to a first- and second-grade reading and writing curriculum</li>
+          <li>Collaborated remotely across time zones with a distributed South African team</li>
+        </ul>
+        <div class="mt-2">
+          <span class="badge rounded-pill bg-black">Godot</span>
+          <span class="badge rounded-pill bg-success">Android</span>
+          <span class="badge rounded-pill bg-secondary text-light">Team Lead</span>
+          <span class="badge rounded-pill bg-secondary text-light">Architecture</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3 shadow-sm text-white bg-dark">
+      <div class="card-body">
+        <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+          <h3 class="card-title fs-4 mb-1">Game Developer &mdash; EdNoKa</h3>
+          <small class="text-secondary">2022 &ndash; Present</small>
+        </div>
+        <small class="text-secondary d-block mb-2">Montr&eacute;al</small>
+        <p class="card-text mb-0">Founder and lead developer of an educational gaming platform blending custom-built quizzes with gameplay across farming, hack &amp; slash, platformer, puzzle, and sports genres. Released 5+ playable games in Unity and Godot, built the full-stack Django backend, and published on Steam, Google Play, and the Apple Store. <a href="#professional-games" class="link-info">See the games below.</a></p>
+      </div>
+    </div>
+
+    <div class="card mb-3 shadow-sm text-white bg-dark">
+      <div class="card-body">
+        <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+          <h3 class="card-title fs-4 mb-1">Mental Health Facilitator and Speaker &mdash; Relief &amp; HeadPause</h3>
+          <small class="text-secondary">2017 &ndash; 2024</small>
+        </div>
+        <small class="text-secondary d-block mb-2">Montr&eacute;al &middot; concurrent with development work</small>
+        <p class="card-text mb-0">250+ individual and group sessions, training facilitators and managers, and corporate workshops across Quebec. Designing learning experiences for adults directly informs how I structure in-game instruction and onboarding, and a psychology background is the same set of questions that drives playtest interpretation.</p>
+      </div>
+    </div>
+
+    <div class="card mb-3 shadow-sm text-white bg-dark">
+      <div class="card-body">
+        <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+          <h3 class="card-title fs-4 mb-1">Java and Web Developer &mdash; BMC Software</h3>
+          <small class="text-secondary">2013 &ndash; 2014</small>
+        </div>
+        <small class="text-secondary d-block mb-2">Montr&eacute;al</small>
+        <ul class="card-text mb-0">
+          <li>Partial management of the development team in SCRUM, including code reviews and TDD</li>
+          <li>Built a new adaptive website to client requirements alongside parallel remote teams</li>
+          <li>Interviewed candidates for web developer positions</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card mb-3 shadow-sm text-white bg-dark">
+      <div class="card-body">
+        <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+          <h3 class="card-title fs-4 mb-1">C# Developer and Analyst &mdash; Fujitsu Consulting</h3>
+          <small class="text-secondary">2008 &ndash; 2013</small>
+        </div>
+        <small class="text-secondary d-block mb-2">Montr&eacute;al</small>
+        <ul class="card-text mb-0">
+          <li>Five years of production C#: a payment solution for HydroSherbrooke and the daycare management system for the Minist&egrave;re de la Famille du Qu&eacute;bec</li>
+          <li>Analyzed client needs, resolved blocking issues, and trained new developers across a three-year project</li>
+        </ul>
+      </div>
+    </div>
+
   </section>
 
   <!-- Professional Games -->
@@ -79,8 +165,10 @@
             <div class="card-body">
               <h4 class="card-title">Base Of 30</h4>
               <p class="card-text">Fast-paced hack-and-slash where you fight through 30 rooms of escalating enemy waves.</p>
+              <small class="text-secondary d-block">Built in Godot for EdNoKa, then rebuilt in Unity as a standalone demo.</small>
             </div>
             <div class="m-2">
+              <span class="badge rounded-pill bg-black">Godot</span>
               <span class="badge rounded-pill bg-black">Unity</span>
               <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
             </div>
@@ -98,8 +186,10 @@
             <div class="card-body">
               <h4 class="card-title">Aerial Ambush</h4>
               <p class="card-text">High-speed platformer where you dodge homing missiles in intense 20–30 second bursts of action.</p>
+              <small class="text-secondary d-block">Built in Godot for EdNoKa, then rebuilt in Unity as a standalone demo.</small>
             </div>
             <div class="m-2">
+              <span class="badge rounded-pill bg-black">Godot</span>
               <span class="badge rounded-pill bg-black">Unity</span>
               <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
             </div>
@@ -347,12 +437,16 @@
         <h4>Education</h4>
         <ul class="list-unstyled">
           <li>
-            <strong>Bachelor of Computer Engineering</strong><br>
+            <strong>B.A. Psychology</strong><br>
+            Concordia University, 2015–2017
+          </li>
+          <li class="mt-2">
+            <strong>B.Eng. Computer Engineering</strong><br>
             University of Sherbrooke, 2005–2009
           </li>
           <li class="mt-2">
-            <strong>Bachelor of Psychology</strong><br>
-            Concordia University, 2015–2017
+            <strong>DEC in Sciences</strong><br>
+            Stanislas College, Montréal, 2003–2005
           </li>
         </ul>
       </div>
@@ -360,10 +454,13 @@
       <div class="col-md-6 mb-4">
         <h4>Skills</h4>
         <ul class="list-unstyled">
-          <li><strong>Engines & Frameworks:</strong> Unity, Godot, Django</li>
-          <li><strong>Languages:</strong>C#, Python, GDScript, Java, JavaScript, HTML, SQL</li>
-          <li><strong>Tools:</strong> Git, Blender, GIMP, Inkscape, Audacity, SQLite</li>
-          <li><strong>Other:</strong> Game server deployment, QA automation, Agile & TDD</li>
+          <li><strong>Engines:</strong> Godot (primary), Unity</li>
+          <li><strong>Languages:</strong> GDScript, C#, Python, Java, JavaScript, HTML/CSS, SQL</li>
+          <li><strong>Gameplay systems:</strong> Input (keyboard &amp; mobile touch), AI behaviors, behavior trees, state machines, procedural generation, physics-based mechanics, combat</li>
+          <li><strong>Shaders &amp; graphics:</strong> Shader scripting in Godot and Unity</li>
+          <li><strong>Leadership:</strong> Technical lead, hiring, code review, sprint planning, mentoring</li>
+          <li><strong>Backend &amp; tools:</strong> Django, SQLite, Git, Blender, GIMP, Inkscape, Audacity</li>
+          <li><strong>Practices:</strong> Agile &amp; TDD, performance optimization, game server deployment</li>
         </ul>
       </div>
     </div>
@@ -371,14 +468,18 @@
     <div class="mt-4">
       <h4>Certifications</h4>
       <ul class="list-unstyled">
-        <li>Certified Associate Python Programmer – Python Institute</li>
-        <li>Oracle Certified Professional, Java SE 7 Programmer</li>
+        <li>Certified Associate Python Programmer – Python Institute, 2024</li>
+        <li>Oracle Certified Professional, Java SE 7 Programmer, 2013</li>
+        <li>Oracle Certified Associate, Java SE 7 Programmer, 2012</li>
       </ul>
     </div>
 
     <div class="mt-4">
-      <a href="{% static 'core/files/Edouard_Murat_CV_EN.pdf' %}" class="btn btn-outline-info" download data-umami-event="download-cv-clicked">
-        Download Full CV
+      <a href="{% static 'core/files/Edouard_Murat_CV_EN.pdf' %}" class="btn btn-outline-info me-2" download data-umami-event="download-cv-clicked">
+        Download CV (English)
+      </a>
+      <a href="{% static 'core/files/Edouard_Murat_CV_FR.pdf' %}" class="btn btn-outline-info" download data-umami-event="download-cv-fr-clicked">
+        T&eacute;l&eacute;charger le CV (Fran&ccedil;ais)
       </a>
     </div>
   </section>
@@ -392,7 +493,7 @@
         <p>Email: <a href="mailto:edouardmurat1@gmail.com" data-umami-event="email-clicked">edouardmurat1@gmail.com</a></p>
       </div>
       <div class="col">
-    <p>GitHub: <a href="https://github.com/MuratEdouard" data-umami-event="github-clicked">MuratEdouard</a></p>
+    <p>GitHub: <a href="https://github.com/StrayEddy" data-umami-event="github-clicked">StrayEddy</a></p>
       </div>
       <div class="col">
     <p>LinkedIn: <a href="http://www.linkedin.com/in/edouard-murat-539567308" data-umami-event="linkedin-clicked">edouard-murat-539567308</a></p>
