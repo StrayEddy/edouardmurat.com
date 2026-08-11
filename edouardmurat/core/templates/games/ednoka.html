@@ -63,20 +63,110 @@
     </div>
   </section>
 
-  <!-- Game Worlds & Quizzes Section -->
+  <!-- Games Grid -->
+  <section class="pt-5 border-top border-secondary">
+    <h2 class="text-light mb-4">Five Unique Games</h2>
+    <div class="row row-cols-2 row-cols-md-3 g-4">
+
+      <div class="col">
+        <a href="/games/base-of-30" class="text-decoration-none">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/base_of_30.png' %}" alt="Base Of 30" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Base of 30</h5>
+              <p class="card-text small">Fast-paced hack-and-slash where you fight through 30 rooms of escalating enemy waves.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Godot</span>
+              <span class="badge rounded-pill bg-black">Unity</span>
+              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="/games/aerial-ambush" class="text-decoration-none">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/aerial_ambush.png' %}" alt="Aerial Ambush" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Aerial Ambush</h5>
+              <p class="card-text small">High-speed platformer where you dodge homing missiles in intense 20–30 second bursts.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Godot</span>
+              <span class="badge rounded-pill bg-black">Unity</span>
+              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="/games/agent-ka" class="text-decoration-none">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/agent_ka.png' %}" alt="Agent Ka" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Agent Ka</h5>
+              <p class="card-text small">8-bit game where you activate powers to find hidden mafia targets in a crowded city, Waldo-style.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Godot</span>
+              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="/games/pico-golf" class="text-decoration-none">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/pico_golf.png' %}" alt="Pico Golf" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Pico Golf</h5>
+              <p class="card-text small">Mini golf on the sea floor, with fish swimming around and a calming underwater vibe.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Godot</span>
+              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="/games/veggies-island" class="text-decoration-none">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
+            <div class="ratio ratio-16x9">
+              <img src="{% static 'core/images/veggies_island.png' %}" alt="Veggies Island" class="card-img-top" style="object-fit: cover;">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Veggies Island</h5>
+              <p class="card-text small">Farming game where you play as a cute rabbit growing veggies on a cozy island.</p>
+            </div>
+            <div class="m-2">
+              <span class="badge rounded-pill bg-black">Godot</span>
+              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Dynamic Quiz System -->
   <section class="pt-5 border-top border-secondary">
     <div class="row g-4">
-      <div class="col-6">
-        <h2 class="text-light mb-4">Five Unique Games</h2>
-        <ul class="list-unstyled fs-5">
-          <li class="mb-2">• <a href="/games/base-of-30"><strong>Base of 30</strong></a> – Hack-and-slash action through procedural rooms</li>
-          <li class="mb-2">• <a href="/games/pico-golf"><strong>Pico Golf</strong></a> – A golf game where every stroke depends on your answers</li>
-          <li class="mb-2">• <a href="/games/veggies-island"><strong>Veggies Island</strong></a> – Farm, harvest, and learn in a relaxing simulation</li>
-          <li class="mb-2">• <a href="/games/aerial-ambush"><strong>Aerial Ambush</strong></a> – Fast-paced 3D platforming with learning-based challenges</li>
-          <li class="mb-2">• <a href="/games/agent-ka"><strong>Agent Ka</strong></a> – *Waldo-style* game on the clock with special powers at your disposal</li>
-        </ul>
-      </div>
-      <div class="col-6">
+      <div class="col">
         <h2 class="text-light mb-4">Dynamic Quiz System</h2>
         <ul class="list-unstyled fs-5">
           <li class="mb-2">• Create and customize your own quizzes</li>
