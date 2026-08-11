@@ -1,9 +1,11 @@
 from django.urls import path
-from .views import home, base_of_30, aerial_ambush, pico_golf, agent_ka, veggies_island, tomb, fruit, archer, hell_h, meditation_world_vr, meditation_card_game, left_4_dead_2d, ednoka
+from .views import home, base_of_30, aerial_ambush, pico_golf, agent_ka, veggies_island, tomb, fruit, archer, hell_h, meditation_world_vr, meditation_card_game, left_4_dead_2d, ednoka, pursuit_of_life, shattered_paradise
 
 urlpatterns = [
     path('', home, name='home'),
     path('games/ednoka/', ednoka, name='ednoka'),
+    path('games/pursuit-of-life/', pursuit_of_life, name='pursuit_of_life'),
+    path('games/shattered-paradise/', shattered_paradise, name='shattered_paradise'),
     path('games/base-of-30/', base_of_30, name='base_of_30'),
     path('games/aerial-ambush/', aerial_ambush, name='aerial_ambush'),
     path('games/pico-golf/', pico_golf, name='pico_golf'),

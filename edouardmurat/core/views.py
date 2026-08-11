@@ -7,6 +7,12 @@ def home(request):
 def ednoka(request):
     return render(request, 'games/ednoka.html')
 
+def pursuit_of_life(request):
+    return render(request, 'games/pursuit_of_life.html')
+
+def shattered_paradise(request):
+    return render(request, 'games/shattered_paradise.html')
+
 def base_of_30(request):
     return render(request, 'games/base_of_30.html')
 

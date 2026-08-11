@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="pursuit-of-life" class="container-fluid text-light py-5 px-4 px-md-5">
+
+  <!-- Back Button -->
+  <div class="mb-4">
+    <a href="{% url 'home' %}#independent-studio-projects" class="btn btn-xs btn-outline-light">
+      ← Back to list of games
+    </a>
+  </div>
+
+  <!-- Title and Description -->
+  <section class="mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold mb-3">
+          Pursuit of Life
+          <span class="badge bg-secondary text-light fw-semibold fs-6">Life Sim</span>
+        </h1>
+        <p class="lead text-light">
+          A pixel-art urban life-sim: ride the bus, take the subway, and move between the apartment, the clothing store, and the music store.
+        </p>
+        <p class="lead text-light">
+          Built around a dynamic weather system: real-time rain, per-tile wetness tracking, and puddle reflections for the player, NPCs, and foliage alike.
+        </p>
+      </div>
+
+      <!-- Trailer -->
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <video class="w-100" autoplay muted loop playsinline poster="{% static 'core/images/pursuit_of_life.png' %}">
+            <source src="{% static 'core/videos/pursuit_of_life.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4 align-items-center">
+      <div class="col">
+        <h2 class="text-light mb-4">Technical Highlights</h2>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Dynamic rain system with customizable impact zones and per-region wetness tracking</li>
+          <li class="mb-2">• Real-time puddle reflections for sprites, NPCs, and swaying foliage</li>
+          <li class="mb-2">• Day/night lighting driven by a global time-of-day system</li>
+          <li class="mb-2">• Handcrafted city scenes: apartment, bus, subway platform and train, clothing store, music store</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+{% endblock %}

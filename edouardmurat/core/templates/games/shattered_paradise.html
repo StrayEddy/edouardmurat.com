@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="shattered-paradise" class="container-fluid text-light py-5 px-4 px-md-5">
+
+  <!-- Back Button -->
+  <div class="mb-4">
+    <a href="{% url 'home' %}#independent-studio-projects" class="btn btn-xs btn-outline-light">
+      ← Back to list of games
+    </a>
+  </div>
+
+  <!-- Title and Description -->
+  <section class="mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold mb-3">
+          Shattered Paradise
+          <span class="badge bg-secondary text-light fw-semibold fs-6">Roguelike</span>
+        </h1>
+        <p class="lead text-light">
+          A turn-based, grid-based dungeon crawler roguelike where death is permanent and every run shapes the next.
+        </p>
+        <p class="lead text-light">
+          Retrace Dante's path through Inferno, Purgatory, and Paradise as you explore procedurally generated worlds ruled by a false god. Originally titled <em>Paradise Lost</em>, built under the studio name One More Turn Studios.
+        </p>
+      </div>
+
+      <!-- Trailer -->
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <video class="w-100" autoplay muted loop playsinline poster="{% static 'core/images/shattered_paradise.png' %}">
+            <source src="{% static 'core/videos/shattered_paradise.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Pillars Section -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4 align-items-center">
+      <div class="col">
+        <h2 class="text-light mb-4">Core Design Pillars</h2>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2">• Turn-based, grid-based combat</li>
+          <li class="mb-2">• Procedural dungeons with persistent world state</li>
+          <li class="mb-2">• Procedural loot</li>
+          <li class="mb-2">• Handcrafted world map and NPC hubs</li>
+          <li class="mb-2">• Heavy narrative integration through mechanics</li>
+          <li class="mb-2">• Deep character customization</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+{% endblock %}
