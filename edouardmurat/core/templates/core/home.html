@@ -63,7 +63,7 @@
           <small class="text-secondary">2022 &ndash; Present</small>
         </div>
         <small class="text-secondary d-block mb-2">Montr&eacute;al</small>
-        <p class="card-text mb-0">Founder and lead developer of an educational gaming platform blending custom-built quizzes with gameplay across farming, hack &amp; slash, platformer, puzzle, and sports genres. Released 5+ playable games in Unity and Godot, built the full-stack Django backend, and published on Steam, Google Play, and the Apple Store. <a href="#professional-games" class="link-info">See the games below.</a></p>
+        <p class="card-text mb-0">Founder and lead developer of an educational gaming platform blending custom-built quizzes with gameplay across farming, hack &amp; slash, platformer, puzzle, and sports genres. Released 5+ playable games in Unity and Godot, built the full-stack Django backend, and published on Steam, Google Play, and the Apple Store. <a href="#professional-projects" class="link-info">See the games below.</a></p>
       </div>
     </div>
 
@@ -109,65 +109,55 @@
 
   </section>
 
-  <!-- Professional Games -->
-  <section id="professional-games" class="container py-5 bg-dark-light">
-    <h2 class="mb-4 fs-1">Professional Games</h2>
+  <!-- Professional Projects -->
+  <section id="professional-projects" class="container py-5 bg-dark-light">
+    <h2 class="mb-4 fs-1">Professional Projects</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
 
-    <!-- EdNoKa card -->
-    <a href="/games/ednoka" class="text-decoration-none text-dark">
-      <div class="card mb-4 shadow-sm hover-zoom text-white bg-dark">
-        <div class="row g-0 align-items-center">
+      <!-- Nanisca Card -->
+      <div class="col">
+        <div class="card h-100 shadow-sm text-white bg-dark">
+          <div class="card-body">
+            <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+              <h3 class="card-title fs-4 mb-1">Nanisca</h3>
+              <small class="text-secondary">Sept 2025 &ndash; Aug 2026</small>
+            </div>
+            <small class="text-secondary d-block mb-3">Sigma Digital &middot; South Africa (remote) &middot; Lead Gameplay Programmer</small>
+            <p class="card-text">An educational gaming platform built from the ground up for first- and second-grade children in Africa. Six curriculum-aligned literacy mini-games delivered on low-cost Android tablets, powered by a parameter-driven framework that turns a single templated mechanic into many distinct curriculum activities.</p>
+            <p class="card-text mb-0"><small class="text-secondary">Led a five-person programming team &mdash; hired the team, owned the architecture, ran code review and sprint planning.</small></p>
+          </div>
+          <div class="m-2">
+            <span class="badge rounded-pill bg-black">Godot</span>
+            <span class="badge rounded-pill bg-success">Android</span>
+            <span class="badge rounded-pill bg-secondary text-light">Team Lead</span>
+            <span class="badge rounded-pill bg-secondary text-light">EdTech</span>
+            <span class="badge rounded-pill bg-secondary text-light">Client Project</span>
+          </div>
+        </div>
+      </div>
 
-          <!-- Left: Video -->
-          <div class="col-md-6">
+      <!-- EdNoKa Card -->
+      <div class="col">
+        <a href="/games/ednoka" class="text-decoration-none text-dark">
+          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
             <div class="ratio ratio-16x9">
               <video class="w-100" autoplay muted loop playsinline>
                 <source src="{% static 'core/videos/ednoka_trailer.mp4' %}" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             </div>
-          </div>
-
-          <!-- Right: Card Body -->
-          <div class="col-md-6">
             <div class="card-body">
-              <h3 class="card-title">EdNoKa - <small class="fs-5">Study Through Gaming</small></h3>
-              <small class="text-secondary">October 2022 - Present</small>
-              <p class="card-text">
-                An online educational gaming platform blending quizzes with gameplay in various 2D and 3D worlds. Features assisted quiz creation, in-game store, and 5 games presented below.
-              </p>
-
-              <!-- Pills -->
-              <div class="mt-2">
-                <span class="badge rounded-pill bg-primary">Steam</span>
-                <span class="badge rounded-pill bg-success">Google Play</span>
-                <span class="badge rounded-pill bg-danger">Apple Store</span>
-                <span class="badge rounded-pill bg-secondary text-light">In-Game Store</span>
-                <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
+              <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+                <h3 class="card-title fs-4 mb-1">EdNoKa</h3>
+                <small class="text-secondary">2022 &ndash; Present</small>
               </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </a>
-
-
-    <div class="row row-cols-2 row-cols-md-5 g-4">
-
-      <!-- Base Of 30 Card -->
-      <div class="col">
-        <a href="/games/base-of-30" class="text-decoration-none text-dark">
-          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
-            <div class="ratio ratio-16x9">
-              <img src="{% static 'core/images/base_of_30.png' %}" alt="Base Of 30 Image" class="card-img-top" style="object-fit: cover;">
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Base Of 30</h4>
-              <p class="card-text">Fast-paced hack-and-slash where you fight through 30 rooms of escalating enemy waves.</p>
-              <small class="text-secondary d-block">Built in Godot for EdNoKa, then rebuilt in Unity as a standalone demo.</small>
+              <small class="text-secondary d-block mb-2">Montr&eacute;al &middot; Founder</small>
+              <p class="card-text mb-0">Educational gaming platform blending quizzes with gameplay across farming, hack &amp; slash, platformer, puzzle, and sports genres. Five playable games published on Steam, Google Play, and the Apple Store.</p>
             </div>
             <div class="m-2">
+              <span class="badge rounded-pill bg-primary">Steam</span>
+              <span class="badge rounded-pill bg-success">Google Play</span>
+              <span class="badge rounded-pill bg-danger">Apple Store</span>
               <span class="badge rounded-pill bg-black">Godot</span>
               <span class="badge rounded-pill bg-black">Unity</span>
               <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
@@ -175,92 +165,6 @@
           </div>
         </a>
       </div>
-
-      <!-- Aerial Ambush Card -->
-      <div class="col">
-        <a href="/games/aerial-ambush" class="text-decoration-none text-dark">
-          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
-            <div class="ratio ratio-16x9">
-              <img src="{% static 'core/images/aerial_ambush.png' %}" alt="Aerial Ambush Image" class="card-img-top" style="object-fit: cover;">
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Aerial Ambush</h4>
-              <p class="card-text">High-speed platformer where you dodge homing missiles in intense 20–30 second bursts of action.</p>
-              <small class="text-secondary d-block">Built in Godot for EdNoKa, then rebuilt in Unity as a standalone demo.</small>
-            </div>
-            <div class="m-2">
-              <span class="badge rounded-pill bg-black">Godot</span>
-              <span class="badge rounded-pill bg-black">Unity</span>
-              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Agen Ka Card -->
-      <div class="col">
-        <a href="/games/agent-ka" class="text-decoration-none text-dark">
-          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
-            <div class="ratio ratio-16x9">
-              <img src="{% static 'core/images/agent_ka.png' %}" alt="Agent Ka Image" class="card-img-top" style="object-fit: cover;">
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Agent Ka</h4>
-              <p class="card-text">8-bit game where you activate powers to find hidden mafia targets in a crowded city, Waldo-style.</p>
-            </div>
-            <div class="m-2">
-              <span class="badge rounded-pill bg-black">Godot</span>
-              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Pico Golf Card -->
-      <div class="col">
-        <a href="/games/pico-golf" class="text-decoration-none text-dark">
-          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
-            <div class="ratio ratio-16x9">
-              <img src="{% static 'core/images/pico_golf.png' %}" alt="Pico Golf Image" class="card-img-top" style="object-fit: cover;">
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Pico Golf</h4>
-              <p class="card-text">Mini golf game set on the sea floor, with fish swimming around and a calming underwater vibe.</p>
-            </div>
-            <div class="m-2">
-              <span class="badge rounded-pill bg-black">Godot</span>
-              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Veggies Island Card -->
-      <div class="col">
-        <a href="/games/veggies-island" class="text-decoration-none text-dark">
-          <div class="card h-100 shadow-sm hover-zoom text-white bg-dark">
-            <div class="ratio ratio-16x9">
-              <img src="{% static 'core/images/veggies_island.png' %}" alt="Veggies Island Image" class="card-img-top" style="object-fit: cover;">
-            </div>
-            <div class="card-body">
-              <h4 class="card-title">Veggies Island</h4>
-              <p class="card-text">Farming game where you play as a cute rabbit growing veggies on a cozy island.</p>
-            </div>
-            <div class="m-2">
-              <span class="badge rounded-pill bg-black">Godot</span>
-              <span class="badge rounded-pill bg-black text-white"><i class="fa-solid fa-gamepad"></i></span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Independent Studio Projects -->
-  <section id="independent-studio-projects" class="container py-5 bg-dark-light">
-    <h2 class="mb-4 fs-1">Independent Studio Projects</h2>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
 
       <!-- Shattered Paradise Card -->
       <div class="col">
@@ -270,10 +174,12 @@
               <img src="{% static 'core/images/shattered_paradise.png' %}" alt="Shattered Paradise Screenshot" class="card-img-top" style="object-fit: cover;">
             </div>
             <div class="card-body">
-              <h3 class="card-title fs-4">Shattered Paradise <small class="fs-6">(formerly Paradise Lost)</small></h3>
-              <small class="text-secondary">July 2025 &ndash; December 2025</small>
-              <p class="card-text">Turn-based, grid-based dungeon crawler roguelike where death is permanent and every run shapes the next. Retraces Dante's path through Inferno, Purgatory, and Paradise across procedurally generated dungeons ruled by a false god.</p>
-              <small class="text-secondary d-block">One More Turn Studios</small>
+              <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+                <h3 class="card-title fs-4 mb-1">Shattered Paradise <small class="fs-6">(formerly Paradise Lost)</small></h3>
+                <small class="text-secondary">July 2025 &ndash; December 2025</small>
+              </div>
+              <small class="text-secondary d-block mb-2">One More Turn Studios</small>
+              <p class="card-text mb-0">Turn-based, grid-based dungeon crawler roguelike where death is permanent and every run shapes the next. Retraces Dante's path through Inferno, Purgatory, and Paradise across procedurally generated dungeons ruled by a false god.</p>
             </div>
             <div class="m-2">
               <span class="badge rounded-pill bg-black">Godot</span>
@@ -292,9 +198,11 @@
               <img src="{% static 'core/images/pursuit_of_life.png' %}" alt="Pursuit of Life Screenshot" class="card-img-top" style="object-fit: cover;">
             </div>
             <div class="card-body">
-              <h3 class="card-title fs-4">Pursuit of Life <small class="fs-6">(PoL)</small></h3>
-              <small class="text-secondary">April 2024 &ndash; August 2025</small>
-              <p class="card-text">Pixel-art urban life-sim: ride the bus, take the subway, and wander between the apartment, the clothing store, and the music store, all under a dynamic weather system with real-time rain, puddle reflections, and wetness-driven lighting.</p>
+              <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+                <h3 class="card-title fs-4 mb-1">Pursuit of Life <small class="fs-6">(PoL)</small></h3>
+                <small class="text-secondary">April 2024 &ndash; August 2025</small>
+              </div>
+              <p class="card-text mb-0">Pixel-art urban life-sim: ride the bus, take the subway, and wander between the apartment, the clothing store, and the music store, all under a dynamic weather system with real-time rain, puddle reflections, and wetness-driven lighting.</p>
             </div>
             <div class="m-2">
               <span class="badge rounded-pill bg-black">Godot</span>
