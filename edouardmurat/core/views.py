@@ -48,3 +48,6 @@ def meditation_card_game(request):
 
 def left_4_dead_2d(request):
     return render(request, 'games/left_4_dead_2d.html')
+
+def nanisca(request):
+    return render(request, 'games/nanisca.html')

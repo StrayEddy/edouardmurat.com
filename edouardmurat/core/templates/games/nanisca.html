@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Nanisca – Edouard Murat{% endblock %}
+
+{% block content %}
+<div id="nanisca-page" class="container-fluid text-light py-5 px-4 px-md-5">
+
+  <!-- Back Button -->
+  <div class="mb-4">
+    <a href="{% url 'home' %}#professional-projects" class="btn btn-xs btn-outline-light">
+      ← Back to projects
+    </a>
+  </div>
+
+  <!-- Title and Photo -->
+  <section class="mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-4 fw-bold mb-2">Nanisca</h1>
+        <p class="text-secondary mb-3">Sigma Digital &middot; South Africa (remote) &middot; Sept 2025 &ndash; Aug 2026</p>
+        <p class="lead text-light">
+          An educational gaming platform built from the ground up for first- and second-grade children in Africa, delivered on low-cost Android tablets.
+        </p>
+        <p class="fs-5 text-light">
+          I joined as Lead Gameplay Programmer, hired the programming team, and led it as technical lead for eleven months — owning the architecture, running code review, and driving sprint planning with a distributed South African team.
+        </p>
+        <p class="fs-5 text-light mb-0">
+          Nanisca is a private client project and is not publicly available.
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9">
+          <img src="{% static 'core/images/nanisca.jpg' %}" alt="Child using Nanisca on a tablet in a classroom in Africa" class="rounded" style="object-fit: cover; object-position: center 30%; width: 100%; height: 100%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Built -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4">
+      <div class="col">
+        <h2 class="text-light mb-4">What I Built</h2>
+
+        <h4 class="text-light mt-4 mb-2">UI Framework</h4>
+        <p class="fs-5">
+          Designed the platform's shared UI framework — a grid-based container providing a progress bar, corner buttons, and an animated teacher demo system used by every activity on the platform. Migrating all activities onto this framework was a prerequisite for the architectural work that followed.
+        </p>
+
+        <h4 class="text-light mt-4 mb-2">MVVM + FSM Architecture</h4>
+        <p class="fs-5">
+          Designed and introduced an MVVM + finite-state-machine architecture adopted across all activities. The pattern decouples game logic from presentation: each activity's rules live in a Model and ViewModel tested in isolation, while FSM states make the activity's flow explicit and auditable. I created the scaffold, wrote the migration playbook, and led the team through migrating every activity onto it.
+        </p>
+
+        <h4 class="text-light mt-4 mb-2">Six Curriculum-Aligned Mini-Games</h4>
+        <p class="fs-5">
+          Delivered six mini-games mapped to a first- and second-grade reading and writing curriculum, with two rounds of playtesting with the target age group. Each activity shares core mechanics through the framework — curriculum content is swappable without rebuilding the underlying game logic.
+        </p>
+
+        <h4 class="text-light mt-4 mb-2">Educator Collaboration</h4>
+        <p class="fs-5">
+          Worked directly with educators and instructional designers across time zones to translate curriculum goals into game mechanics — bridging educational theory and interactive design in each sprint.
+        </p>
+
+        <h4 class="text-light mt-4 mb-2">Tooling & CI</h4>
+        <p class="fs-5">
+          Built a PCK Builder editor plugin for configuring and exporting activity packages at runtime, and improved the CI pipeline for automated linting and test runs on every pull request.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="pt-5 border-top border-secondary">
+    <div class="row g-4">
+      <div class="col">
+        <h2 class="text-light mb-4">Tech Stack</h2>
+        <div>
+          <span class="badge rounded-pill bg-black fs-6 me-2 mb-2">Godot 4</span>
+          <span class="badge rounded-pill bg-black fs-6 me-2 mb-2">GDScript</span>
+          <span class="badge rounded-pill bg-success fs-6 me-2 mb-2">Android</span>
+          <span class="badge rounded-pill bg-secondary fs-6 me-2 mb-2">MVVM</span>
+          <span class="badge rounded-pill bg-secondary fs-6 me-2 mb-2">FSM</span>
+          <span class="badge rounded-pill bg-secondary fs-6 me-2 mb-2">GdUnit4</span>
+          <span class="badge rounded-pill bg-secondary fs-6 me-2 mb-2">GitHub Actions</span>
+          <span class="badge rounded-pill bg-secondary fs-6 me-2 mb-2">Team Lead</span>
+          <span class="badge rounded-pill bg-secondary fs-6 me-2 mb-2">EdTech</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+{% endblock %}

@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import home, base_of_30, aerial_ambush, pico_golf, agent_ka, veggies_island, tomb, fruit, archer, hell_h, meditation_world_vr, meditation_card_game, left_4_dead_2d, ednoka, pursuit_of_life, shattered_paradise
+from .views import home, base_of_30, aerial_ambush, pico_golf, agent_ka, veggies_island, tomb, fruit, archer, hell_h, meditation_world_vr, meditation_card_game, left_4_dead_2d, ednoka, pursuit_of_life, shattered_paradise, nanisca
 
 urlpatterns = [
     path('', home, name='home'),
@@ -18,4 +18,5 @@ urlpatterns = [
     path('games/meditation-world-vr/', meditation_world_vr, name='meditation_world_vr'),
     path('games/meditation-card-game/', meditation_card_game, name='meditation_card_game'),
     path('games/left-4-dead-2d/', left_4_dead_2d, name='left_4_dead_2d'),
+    path('games/nanisca/', nanisca, name='nanisca'),
 ]
