@@ -21,6 +21,6 @@ jobs:
             cd /root/edouardmurat.com &&
             git pull &&
             venv/bin/pip install -r requirements.txt -q &&
-            venv/bin/python manage.py collectstatic --no-input &&
+            venv/bin/python edouardmurat/manage.py collectstatic --no-input &&
             systemctl restart edouardmurat.service
           '
