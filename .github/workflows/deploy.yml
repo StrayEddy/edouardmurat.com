@@ -20,7 +20,7 @@ jobs:
           ssh root@74.208.9.220 '
             cd /root/edouardmurat.com &&
             git pull &&
-            pip install -r requirements.txt -q &&
-            python manage.py collectstatic --no-input &&
+            venv/bin/pip install -r requirements.txt -q &&
+            venv/bin/python manage.py collectstatic --no-input &&
             systemctl restart edouardmurat.service
           '
