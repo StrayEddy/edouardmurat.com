@@ -20,10 +20,10 @@
           <span class="badge bg-secondary fw-semibold fs-6">"Study Through Gaming" Platform</span>
         </h1>
         <p class="lead text-light">
-          EdNoKa is a free educational gaming platform where players answer quiz questions to progress through engaging, genre-diverse games.
+          EdNoKa is a free educational gaming platform. Players answer quiz questions to progress through five games in five different genres.
         </p>
         <p class="lead text-light">
-          Choose or create quizzes, play across multiple game styles, and learn while you play. Whether you’re farming, golfing, or battling enemies, your knowledge drives the gameplay.
+          Pick a quiz or write your own, then play it in whichever game you like. Farming, mini golf, a hack-and-slash: the quiz stays the same and the game around it changes. How well you know the material is what moves you forward.
         </p>
         <a href="https://store.steampowered.com/app/3256100/EdNoKa/" target="_blank" class="btn btn-outline-light mt-3 px-4 py-2" data-umami-event="ednoka-playtest-clicked">
           Play the free Steam demo
@@ -49,15 +49,15 @@
   <section class="pt-5 border-top border-secondary">
     <div class="row g-4">
       <div class="col">
-        <h2 class="text-light mb-4">The Concept Behind EdNoKa</h2>
+        <h2 class="text-light mb-4">Why I Built It</h2>
         <p class="fs-5">
-          EdNoKa was born from a simple frustration: the artificial divide between learning and play. Growing up, studying was expected to be serious and isolated, while gaming was considered a guilty pleasure.
+          Studying and playing were always kept apart when I was growing up. Studying was supposed to be serious and solitary. Games were what you did afterwards, if you had earned them.
         </p>
         <p class="fs-5">
-          I believe learning and play can—and should—coexist. EdNoKa is my proof of that belief. It's a platform where academic content blends seamlessly with interactive, rewarding gameplay. Whether you're solving puzzles, dodging projectiles, or farming crops, you're learning. Every question shapes your experience. Every lesson lives inside the game.
+          I never accepted that split, and EdNoKa is my argument against it. The quiz is not a gate in front of the game or a score at the end of it. It runs inside the game, and answering is how you play. Dodge a missile, plant a crop, sink a putt: the questions are part of the loop either way.
         </p>
         <p class="fs-5">
-          This is more than gamification—it's learning through play, with no compromises. Because no one should have to choose between personal growth and genuine fun.
+          That is a larger claim than gamification, which usually means points and badges bolted onto homework. Here the subject matter is the mechanic.
         </p>
       </div>
     </div>
@@ -65,7 +65,7 @@
 
   <!-- Games Grid -->
   <section class="pt-5 border-top border-secondary">
-    <h2 class="text-light mb-4">Five Unique Games</h2>
+    <h2 class="text-light mb-4">The Five Games</h2>
     <div class="row row-cols-2 row-cols-md-3 g-4">
 
       <div class="col">
@@ -167,12 +167,12 @@
   <section class="pt-5 border-top border-secondary">
     <div class="row g-4">
       <div class="col">
-        <h2 class="text-light mb-4">Dynamic Quiz System</h2>
+        <h2 class="text-light mb-4">The Quiz System</h2>
         <ul class="list-unstyled fs-5">
-          <li class="mb-2">• Create and customize your own quizzes</li>
-          <li class="mb-2">• Use the most advanced AI to help you generate unique quizzes</li>
-          <li class="mb-2">• Browse and adapt community-made quizzes</li>
-          <li class="mb-2">• Access curated, high-quality quizzes from the EdNoKa team</li>
+          <li class="mb-2">• Write your own quiz, question by question</li>
+          <li class="mb-2">• Generate a draft with AI, then edit it down</li>
+          <li class="mb-2">• Copy and adapt a quiz another player has written</li>
+          <li class="mb-2">• Play the ready-made sets that come with EdNoKa</li>
         </ul>
       </div>
     </div>
@@ -183,40 +183,40 @@
     <div class="row g-4">
       <div class="col">
         <h2 class="text-light mb-4">Behind the Scenes</h2>
-        <p class="fs-5 mb-3">EdNoKa was developed almost entirely by me—from game design to server infrastructure. Here's a breakdown of what I built:</p>
+        <p class="fs-5 mb-3">I built almost all of EdNoKa myself, from the game design through to the servers it runs on. What that covered:</p>
 
         <!-- Game Development -->
-        <h4 class="text-light mt-4 mb-2">🎮 Game Development</h4>
+        <h4 class="text-light mt-4 mb-2">Game Development</h4>
         <ul class="list-unstyled fs-5">
-          <li class="mb-2">• Designed and developed five genre-spanning games in Unity and Godot (2D & 3D)</li>
-          <li class="mb-2">• Engineered quiz-integrated gameplay: frequent multiple choice question that alters the course of play</li>
-          <li class="mb-2">• Integrated AI-assisted quiz generation for effortless player content creation</li>
+          <li class="mb-2">• Designed and built five games across five genres in Unity and Godot, 2D and 3D</li>
+          <li class="mb-2">• Wired the quiz into the game loop: multiple-choice questions arrive often, and the answer changes what happens next</li>
+          <li class="mb-2">• Added AI-assisted quiz generation, so a player can draft a set without typing every question</li>
         </ul>
 
         <!-- Backend and Infrastructure -->
-        <h4 class="text-light mt-4 mb-2">🛠️ Backend & Infrastructure</h4>
+        <h4 class="text-light mt-4 mb-2">Backend & Infrastructure</h4>
         <ul class="list-unstyled fs-5">
-          <li class="mb-2">• Built a Django REST API with full database integration and secure authentication</li>
-          <li class="mb-2">• Deployed production servers using Ubuntu, and Nginx</li>
-          <li class="mb-2">• Developed a cross-platform, coin-based in-game store (Steam, Google Play, Apple Store)</li>
+          <li class="mb-2">• Built the Django REST API, the database layer and the authentication</li>
+          <li class="mb-2">• Deployed and run the production servers on Ubuntu and Nginx</li>
+          <li class="mb-2">• Built the coin-based in-game store on Steam, Google Play and the App Store</li>
         </ul>
 
         <!-- Testing and Feedback -->
-        <h4 class="text-light mt-4 mb-2">🧪 Testing & Feedback</h4>
+        <h4 class="text-light mt-4 mb-2">Testing & Feedback</h4>
         <ul class="list-unstyled fs-5">
-          <li class="mb-2">• Ran thorough testing across desktop (Windows, Mac, Linux) and mobile platforms (Android & iOS)</li>
-          <li class="mb-2">• Beta-tested with real users and gathered live feedback from streamers</li>
+          <li class="mb-2">• Tested it on Windows, Mac, Linux, Android and iOS</li>
+          <li class="mb-2">• Ran a beta and watched streamers play it live</li>
         </ul>
 
         <!-- Design and Promotion -->
-        <h4 class="text-light mt-4 mb-2">🎨 Design & Promotion</h4>
+        <h4 class="text-light mt-4 mb-2">Design & Promotion</h4>
         <ul class="list-unstyled fs-5">
-          <li class="mb-2">• Created all promotional assets: video trailers, logos, animated explainers, Steam page, and the official website</li>
+          <li class="mb-2">• Made every promotional asset: the trailers, the logos, the animated explainers, the Steam page and the website</li>
         </ul>
 
         <!-- Final Note -->
         <p class="fs-5 mt-4">
-          From concept to deployment, every part of EdNoKa was crafted by one person. This isn't just a project—it's a mission to change how people experience learning.
+          All of it is one person's work, from the game design down to the nginx config.
         </p>
       </div>
     </div>
